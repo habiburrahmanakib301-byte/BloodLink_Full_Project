@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS Blood Club;
+USE Blood Club;
+
+CREATE TABLE donors (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  phone VARCHAR(11),
+  blood_group VARCHAR(5),
+  location VARCHAR(100),
+  registered_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+ 
